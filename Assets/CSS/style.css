@@ -1,0 +1,45 @@
+#gifs {
+
+    border: 3px solid turquoise;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+}
+  
+.gif-cir {
+
+    border: 2px solid grey;
+    height: 60px;
+    width:60px;
+    position: absolute; 
+    top: 42%;
+    left: 42%;
+}
+
+.gif-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 280px;
+    max-height: 190px;
+}
+
+#play {
+    height: 190px;
+    width: 280px;
+    margin: calc(50% - 85px) auto;
+    align-content: center;
+}
+
+.unclickable {
+    pointer-events: none;
+}
+
+.buttons {
+    margin-bottom: 90px;
+}
+
+.hidden {
+    display: none;
+}
