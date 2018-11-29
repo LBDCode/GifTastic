@@ -1,15 +1,83 @@
-#gifs {
+header {
+    text-align: center;
+    font-weight: 700;
+    font-size: 60px;
+    margin: 10px auto 90px auto;
+}
 
+h3 {
+    margin: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #F9BE02;
+}
+
+/* styling for newgifs  section, buttons, and search form */
+#newGIFs {
+    margin-top: 20px;
+    align-content: center;
+    font-size: 12px;
+ }
+
+#searchBtn {
+    background-color: white;
+    border: 2px solid rgba(128, 0, 128, 0.438);
+    padding: 4px;
+    color: grey;
+}
+
+#gifTerm {
+    border: 2px solid rgba(128, 0, 128, 0.473);
+    padding: 3px;
+}
+
+#gif-buttons {
+    margin-top: 10px;
+    max-height: 80%;
+    overflow: auto;
+}
+
+#gif-buttons button {
+    margin: 5%;
+    color: #F53240;
+    background-color: white;
+    padding: 5px;
+    font-size: 14px;
+    border: 2px solid rgba(245, 50, 63, 0.76);
+    border-radius: 5px;
+}
+
+
+/* styling for favorites section*/
+.favs, .buttonDiv {
+    border: 2px solid turquoise;
+    text-align: center;
+    padding: 5px;    
+}
+
+.favorites {
+    margin: 5px;
+    padding: 5px;
+}
+
+.fav-img {
+    height: 60px;
+    width:60px;
+    padding: 5px;
+}
+
+
+/* styling for gifs area, gifcircle and play div*/
+#gifs {
     border: 3px solid turquoise;
-    height: 400px;
-    width: 400px;
+    height: 380px;
+    width: 380px;
     border-radius: 50%;
     position: relative;
     margin: 0 auto;
 }
   
 .gif-cir {
-
     border: 2px solid grey;
     height: 60px;
     width:60px;
@@ -18,26 +86,44 @@
     left: 42%;
 }
 
-.gif-img {
+.gif-img {  
     display: block;
     margin: 0 auto;
-    max-width: 280px;
-    max-height: 190px;
+    max-width: 270px;
+    max-height: 170px;
+    text-align: left;
+    margin:0;
+    padding: 0;
 }
 
 #play {
-    height: 190px;
-    width: 280px;
+    border: none;
+    height: 170px;
+    width: 270px;
     margin: calc(50% - 85px) auto;
     align-content: center;
+    text-align: center;
+    text-justify: center;
+    line-height: 150%;
+    color: rgba(128, 0, 128, 0.856);
 }
 
+/* styling for card */
+.card-text {
+    top: 0;
+    color: white;
+}
+
+.fav-btn {
+    background-color: transparent;
+    border: none; 
+    color: red; 
+}
+
+
+/* misc */
 .unclickable {
     pointer-events: none;
-}
-
-.buttons {
-    margin-bottom: 90px;
 }
 
 .hidden {
