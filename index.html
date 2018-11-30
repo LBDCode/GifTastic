@@ -14,51 +14,51 @@
     <title>Giphy Homework</title>
 </head>
 <body>
-    <header>
-        <p>
-            <span style='color: #02C8A7'>G</span>
-            <span style='color: #F9BE02'>i</span>
-            <span style='color: #F53240'>f</span>
-            <span style='color: #7CDBD5'>T</span>
-            <span style='color: #02C8A7'>a</span>
-            <span style='color: #F9BE02'>s</span>
-            <span style='color: #F53240'>t</span>
-            <span style='color: #7CDBD5'>i</span>
-            <span style='color: #02C8A7'>c</span>
-            <span style='color: #F9BE02'>!</span>
-        </p>
+    <header class="container main">
+        <nav class="navbar navbar-expand-lg">
+            <div class="navbar-brand logo">
+                <span style='color: #7acfd6'>Gif</span><span style='color: #e0474c'>T</span><span style='color: #7acfd6'>astic</span><span style='color: #e0474c'>!</span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                </ul>
+                <span class="navbar-text">
+                View, find, and favorite the latest GIFs
+                </span>
+            </div>
+        </nav>
     </header>
 
-    <div class="container">        
-        <div class="row">
-            <div class="col-3 buttonDiv">
-                <h3>GIF Categories</h3>                
-                <div id="newGIFs">
-                    <form>
-                        <input type="text" name="gifSearchVal" id="gifTerm" placeholder="Search for GIFs">
-                        <input type="submit" name="gifSearchBtn" id="searchBtn">
-                    </form>     
-                </div>              
-                <div id="gif-buttons"></div>       
-            </div>
-
-            <div class="col-6">
+    <div class="container main">  
+        <div class="row">        
+            <div class="col-md-8 gifArea">
                 <div id="gifs" class="gifList">
                     <div id="play" class="playingGif card">
-                        Welcome to GifTastic!<br><br>
+                        <h3>Welcome to GifTastic!</h3>
                         Click any topic button to populate the gif circle, or search for new kinds of gifs. <br> 
                         Click on any gif to play it, then click it again to dismiss it back to the gif circle.  <br>
                         You can favorite gifs by clicking the heart icon.
                     </div>
                 </div>
             </div>
-
-            <div class="col-3 favs">
+            <div class="col-md-4 favs">
                 <h3>Favorites</h3>
                 <div class="favorites  row"></div>
-            </div>                 
-
+            </div>              
+        </div>
+        <div class="buttonDiv">        
+            <div class="row justify-content-center" id="newGIFs">
+                <form>
+                    <input type="text" name="gifSearchVal" id="gifTerm" placeholder="Search for GIFs">
+                    <input type="submit" name="gifSearchBtn" id="searchBtn">
+                </form>     
+            </div>                  
+            <div class="row justify-content-center"" id="gif-buttons"></div>       
         </div>    
+
     </div>
     <script src="Assets/JS/script.js"></script
 </body>
